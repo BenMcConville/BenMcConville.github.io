@@ -1,4 +1,5 @@
-import * as THREE from "three";
+// import * as THREE from "three";
+import * as THREE from "../node_modules/three/build/three.module.js
 // import { Figure } from "./modules/character.js";
 // import { test } from "./modules/character.js";
 // import { Camera, GreaterStencilFunc, Mesh, RGB_ETC1_Format } from "three";
