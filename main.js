@@ -1,5 +1,5 @@
 // import * as THREE from "three";
-import * as THREE from "https://unpkg.com/three@0.120.1/build/three.module.js"
+import * as THREE from './node_modules/three/src/Three.js';
 // import { Figure } from "./modules/character.js";
 // import { test } from "./modules/character.js";
 // import { Camera, GreaterStencilFunc, Mesh, RGB_ETC1_Format } from "three";
