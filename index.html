@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Vite App</title>
+        <script type="module" src="modules/character.js"></script>
+        <script type="module" src="/main.js"></script>
+        <script type="text/javascript" src="mob.js"></script>
+    </head>
+    <body>
+        <canvas id="bg"></canvas>
+        <main class="container">
+            <section class="hub">
+                <div class="hexagonArea first">
+                    <!-- <div class="hexagon">
+                        <img src="Images/1.png" alt="" />
+                        <h3>Home</h3>
+                    </div> -->
+                    <div class="hexagon" onclick="bottomFunction(3000);">
+                        <img src="Images/2.png" alt="" />
+                        <h3>Contact Me</h3>
+                    </div>
+                    <div class="hexagon" onclick="bottomFunction(2000);">
+                        <img src="Images/4.png" alt="" />
+                        <h3>Hobbies</h3>
+                    </div>
+                    <!-- <div class="hexagon">
+                        <img src="Images/4.png" alt="" />
+                        <h3>Extra</h3>
+                    </div> -->
+                </div>
+                <div class="hexagonArea last">
+                    <div
+                        class="hexagon"
+                        onclick="location.href = 'https://github.com/BenMcConville';"
+                    >
+                        <img src="Images/GitHub-Mark-light.png" alt="" />
+                        <h3>Github</h3>
+                    </div>
+                    <div class="hexagon" onclick="bottomFunction(1500);">
+                        <img src="Images/7.png" alt="" />
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="hexagon">
+                        <img
+                            src="Images/Linkedin-Mark-light.png"
+                            onclick="location.href = 'https://www.linkedin.com/in/benjamin-mcconville-3a1198227/';"
+                        />
+                        <h3>Linked In</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section class="About">
+                <div class="AboutText">
+                    <div class="AboutHeader">
+                        <div>
+                            <h2>Benjamin McConville</h2>
+                            <p>
+                                Digital Craftsman ( Artist / Developer /
+                                Designer )
+                            </p>
+                        </div>
+                        <div>
+                            <img src="Images/Icon.png" class="Icon" />
+                        </div>
+                        <div class="MainText">
+                            <h3>About</h3>
+                            <p>
+                                Benjamin (Ben) is a student in the University of
+                                Edinburgh with a passion for backend systems and
+                                electronics. He has a knack for all things
+                                launching products, from planning and designing
+                                all the way to solving real-life problems with
+                                code. When not online or at university, he loves
+                                indoor/outdoor climbing aswell as hanging out
+                                with his friends. Currently, he is working to
+                                get his undergrad and masters in Electronics and
+                                Computer Science from The University of
+                                Edinburgh.
+                            </p>
+                            <h3>Bio</h3>
+                            <p><strong>2002</strong> Add time line</p>
+                            <p>
+                                <strong>2021</strong> Started degree in The
+                                University of Edinburgh.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="three"></section>
+
+            <section id="Hobbies">
+                <div class="Hobbies">
+                    <div class="HobbieText">
+                        <div class="HobbieMain">
+                            <h1>My Hobbies</h1>
+                            <break></break>
+                            <p>Some of my hobbies include ....</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="Contact">
+                <div class="ContactText">
+                    <div class="ContactHeader">
+                        <h1>Contact Me</h1>
+                        <p>
+                            Thanks for checking out my website and feel free to
+                            contact me via the following medias:
+                        </p>
+                        <div class="LinkedIn">
+                            <img
+                                src="Images/Linkedin-Mark-light.png"
+                                style="
+                                    max-width: 50%;
+                                    text-align: center;
+                                    cursor: pointer;
+                                "
+                                onclick="location.href = 'https://www.linkedin.com/in/benjamin-mcconville-3a1198227/';"
+                            />
+                        </div>
+                        <div class="Email">
+                            <img
+                                src="Images/email_icon.png"
+                                style="
+                                    max-width: 50%;
+                                    text-align: center;
+                                    cursor: pointer;
+                                "
+                                onclick="location.href='mailto:yourname@example.com'"
+                            />
+                        </div>
+                        <div class="Github">
+                            <img
+                                src="Images/GitHub-Mark-Light.png"
+                                style="
+                                    max-width: 50%;
+                                    text-align: center;
+                                    cursor: pointer;
+                                "
+                                onclick="location.href = 'https://github.com/BenMcConville';"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <!-- <h1>Page 5</h1>
+                <a href="mailto:yourname@example.com">Email me</a> -->
+            </section>
+        </main>
+        <!-- <script type="module" src="modules/character.js"></script>
+        <script type="module" src="/main.js"></script> -->
+        <!-- <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+                    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+                }
+            }
+        </script> -->
+    </body>
+</html>

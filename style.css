@@ -1,0 +1,217 @@
+html {
+    overflow: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+body {
+    width: 100vw;
+    height: 100vw;
+    margin: 0px;
+    background-color: rgb(245, 255, 247);
+}
+
+body .container {
+    width: 100%;
+    height: 100%;
+}
+
+body .container canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+body .container section {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+body .container .hub {
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 0px;
+}
+
+body .container section:nth-of-type(2) {
+    color: black;
+}
+
+body .container section:nth-of-type(3) {
+    color: black;
+}
+
+body .container section:nth-of-type(4) {
+    /* background-color: green; */
+    color: black;
+}
+
+body .container section:nth-of-type(5) {
+    /* background-color: orange; */
+    color: black;
+}
+
+body .container .hub .hexagonArea {
+    display: flex;
+}
+
+body .container .hub .hexagonArea.last {
+    transform: translateY(-45px);
+}
+
+body .container .hub .hexagonArea .hexagon {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0px 10px;
+    clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
+    background-image: url("Images/Frame.png");
+    background-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+body .container .hub .hexagonArea .hexagon img {
+    width: 80px;
+}
+
+body .container .hub .hexagonArea .hexagon:hover img {
+    width: 80px;
+    transition-duration: 0.8s;
+    transform: rotate(360deg);
+}
+
+body .container .hub .hexagonArea .hexagon:hover {
+    background: deepskyblue;
+    opacity: 0.8;
+    transform: scale(0.8);
+}
+
+body .container .About {
+    color: black;
+    float: left;
+}
+
+body .container .About .AboutText {
+    color: black;
+    margin-top: 11%;
+    width: 100%;
+    height: 25%;
+}
+
+body .container .About .AboutHeader {
+    width: 50%;
+    float: right;
+    position: relative;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body .container .About .AboutHeader div:nth-of-type(1) {
+    width: 50%;
+    margin-top: 40px;
+    float: left;
+}
+
+body .container .About .AboutHeader div:nth-of-type(2) {
+    width: 50%;
+    float: right;
+    position: relative;
+}
+
+body .container .About .AboutHeader div:nth-of-type(3) {
+    margin-top: 10px;
+    float: left;
+    position: relative;
+}
+
+body .container .About .AboutHeader img {
+    width: 180px;
+    height: 160px;
+    left: 50%;
+}
+
+body .container .About .AboutHeader .MainText {
+    width: 70%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+body .container .Contact {
+    color: black;
+    float: left;
+}
+
+body .container .Contact .ContactText {
+    color: black;
+    margin-top: 10%;
+    width: 100%;
+    height: 90%;
+}
+
+body .container .Contact .ContactHeader {
+    width: 50%;
+    hegith: 100%;
+    float: right;
+    position: relative;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body .container .Contact .LinkedIn {
+    margin-top: 7%;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+body .container .Contact .Email {
+    margin-top: 7%;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+body .container .Contact .Github {
+    margin-top: 7%;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+body .container .Hobbies {
+    color: black;
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+body .container .HobbieText {
+    padding-top: 10%;
+    color: black;
+    width: 38%;
+    height: 100%;
+    float: right;
+}
