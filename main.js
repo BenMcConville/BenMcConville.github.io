@@ -1,4 +1,5 @@
-import * as THREE from "three";
+import * as THREE from "https://unpkg.com/three/build/three.module.js";
+//import * as THREE from 'three';
 // import { Figure } from "./modules/character.js";
 // import { test } from "./modules/character.js";
 // import { Camera, GreaterStencilFunc, Mesh, RGB_ETC1_Format } from "three";
@@ -314,9 +315,9 @@ function addGitHubCubes(l) {
   const temp_cube = new THREE.Mesh(
     new THREE.BoxGeometry(20, 10, 1),
     new THREE.MeshStandardMaterial({
-      // wireframe: true,
-      // color: 0x000000,
-      map: THREE.ImageUtils.loadTexture(projects[l]),
+       wireframe: true,
+       color: 0x000000,
+      //map: THREE.ImageUtils.loadTexture(projects[l]),
     }),
   );
   if (l == 0) temp_cube.position.set(-12, -69, 0);
@@ -351,9 +352,9 @@ class HobbieCubes {
     const temp_cube = new THREE.Mesh(
       new THREE.BoxGeometry(18, 27, 0.5),
       new THREE.MeshStandardMaterial({
-        // wireframe: true,
-        // color: 0x000000,
-        map: THREE.ImageUtils.loadTexture(this.hobbies[i]),
+         wireframe: true,
+         color: 0x000000,
+        //map: THREE.ImageUtils.loadTexture(this.hobbies[i]),
       }),
     );
     temp_cube.position.set(
@@ -446,7 +447,9 @@ function animate() {
   if (
     cursor.x < -0.045 &&
     cursor.x > -0.38 &&
-    (cursor.y < 0.33) & (cursor.y > -0.33)
+    cursor.y < 0.33 &&
+    cursor.y > -0.33 &&
+    scrollY == -120
   ) {
     hobyCubes.stall();
   } else hobyCubes.rotateCubes(0.01);
