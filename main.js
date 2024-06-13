@@ -304,7 +304,7 @@ rocket.position.copy(vectorsR);
 let gitHubCubes = [];
 function addGitHubCubes(l) {
   let projects = [
-    "githubProjects/four.png",
+    "githubProjects/Four.png",
     "githubProjects/iceCube.png",
     "githubProjects/Jup.png",
     "githubProjects/kalman.png",
@@ -344,7 +344,7 @@ class HobbieCubes {
     this.hobbies = [
       "hobbiePictures/climbing.JPG",
       "hobbiePictures/endeavour.png",
-      "hobbiePictures/cycling.JPG",
+      "hobbiePictures/cycling.jpg",
     ];
   }
   createCubes(i, max) {
