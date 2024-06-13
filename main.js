@@ -314,9 +314,9 @@ function addGitHubCubes(l) {
   const temp_cube = new THREE.Mesh(
     new THREE.BoxGeometry(20, 10, 1),
     new THREE.MeshStandardMaterial({
-       wireframe: true,
-       color: 0x000000,
-      //map: THREE.ImageUtils.loadTexture(projects[l]),
+       //wireframe: true,
+       //color: 0x000000,
+       map: new THREE.TextureLoader().load(projects[i]),
     }),
   );
   if (l == 0) temp_cube.position.set(-12, -69, 0);
@@ -351,9 +351,10 @@ class HobbieCubes {
     const temp_cube = new THREE.Mesh(
       new THREE.BoxGeometry(18, 27, 0.5),
       new THREE.MeshStandardMaterial({
-         wireframe: true,
-         color: 0x000000,
-        //map: THREE.ImageUtils.loadTexture(this.hobbies[i]),
+         //wireframe: true,
+         //color: 0x000000,
+         map: new THREE.TextureLoader().load(this.hobbies[i]),
+         //map: THREE.ImageUtils.loadTexture(this.hobbies[i]),
       }),
     );
     temp_cube.position.set(
