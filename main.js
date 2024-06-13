@@ -342,7 +342,7 @@ class HobbieCubes {
     this.cubes = [];
     this.rotationVal = 0;
     this.hobbies = [
-      "hobbiePictures/climbing.JPG",
+      "hobbiePictures/climbing.jpeg",
       "hobbiePictures/endeavour.png",
       "hobbiePictures/cycling.jpg",
     ];
